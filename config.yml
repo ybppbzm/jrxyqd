@@ -1,6 +1,6 @@
 author: 若离QQ：2909998156
 # 推送方式：0：邮件推送；1：qmsg推送；2：pushplus推送
-sendType: 0
+sendType: 2
 # 当且仅当sendType为0时有用，邮箱API的地址
 emailApiUrl: 'https://api.ruoli.cc/mail/sendMail'
 # 当且仅当sendType为1时有用，qmsg的Key（如需使用请自行更改）
@@ -121,20 +121,20 @@ users:
       # 任务类型（收集：0、签到：1、查寝：2）
       type: 1
       #username 学号或者工号
-      username: ''
+      username: '1811199122'
       #password 密码
-      password: ''
+      password: 'gudong1'
       #address 地址，定位信息
-      address: ''
+      address: '深圳市龙岗区'
       #sendKey 当sendType为0时代表邮箱，当sendType为1时代表接收消息的QQ号码，当sendType为2时代表接收消息的pushplus token
       sendKey: ''
       #school 学校全称
-      schoolName: 武汉船舶职业技术学院
+      schoolName: 深圳信息职业技术学院
       # 附上经纬度查询地址（请自行选择自己的学校地址，address，lon，lat都要填查询到的）：http://api.map.baidu.com/lbsapi/getpoint/index.html
       #lon 经度
-      lon: 114.244845
+      lon: 114.223244
       #lat 纬度
-      lat: 30.574166
+      lat: 22.690658
       #abnormalReason 反馈信息（这个一般不用配置，但是不能删除，删除会报错）
       abnormalReason: ''
       #photo 签到照片，不需要可不填，或者直接删除
@@ -148,11 +148,11 @@ users:
       # 表单信息
       forms:
         - form:
-            title: 今天你的体温是多少？
-            value: 37.2℃及以下
+            title: 您的体温是否在37.3°及以上？
+            value: 否
         - form:
-            title: 今天你的身体状况是？
-            value: 健康
+            title: 您是否存在咳嗽、流鼻涕等感冒症状？
+            value: 否
   # 第四个用户配置
   # 以下配置为查寝
   # 这里默认仅适配四川信息职业技术学院，其他学校自行修改
